@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>TECH TONIC 2K26 </title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;600&display=swap"
@@ -39,11 +39,12 @@
 
     body {
       background: #000;
-      /* fallback */
       color: #fff;
       font-family: 'Poppins', sans-serif;
       overflow-x: hidden;
       position: relative;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
 
     /* Animated gradient background */
@@ -1329,15 +1330,14 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
 
         <h3>🔹 About the Symposium</h3>
         <p>
-          Tech Tonic 2K26 — One Day National Level Technical Symposium (March 11, 2026) by the Department of ECE.
-          Bringing together innovative minds to showcase technical excellence and creative problem solving
-          on topics related to <b>Emerging Technology</b>.
+          Tech Tonic 2K26 — One Day National Level Technical Symposium (March 10, 2026) by the Department of ECE.
+          Bringing together innovative minds to showcase technical excellence and creative problem solving.
         </p>
 
         <h3>🔹 Location</h3>
         <p>
           📍 P.T. Lee Chengalvaraya Naicker College of Engineering & Technology,
-          Oovery, Veliyur Post, Kanchipuram – 632503
+          Oovery, Veliyur Post, Kanchipuram – 631501
         </p>
 
         <h3>🔹 Participation Details</h3>
@@ -1460,7 +1460,7 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
       <div class="content">
         UPI ID:<br>
         <b class="upi-text">
-          8248264465@naviaxis
+          mamallanktr-2@okaxis
         </b>
         <div id="upiQR" style="margin-top:20px;display:flex;justify-content:center;"></div>
         <p style="color:#999;font-size:0.8rem;margin-top:8px;text-align:center;">Scan QR to pay via UPI</p>
@@ -1524,17 +1524,12 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
 
         <!-- Instructions & Warnings -->
         <div
-          style="margin-top:25px; padding:18px; background:rgba(139,0,0,0.15); border:1px solid rgba(212,175,55,0.4); border-radius:12px; text-align:left;">
-          <p style="color:var(--gold); font-weight:700; font-size:1rem; margin-bottom:10px;">⚠️ Important Instructions
-          </p>
-          <ul style="color:#e0c97f; font-size:0.88rem; line-height:1.8; padding-left:20px; margin:0;">
-            <li>Upload your payment screenshot clearly showing <b>Transaction ID</b> and <b>Amount</b>.</li>
-            <li style="color:#ff6b6b;"><b>🚫 Submitting fake or edited screenshots will lead to immediate rejection of
-                your registration.</b></li>
-            <li style="color:#ff6b6b;"><b>🚫 Only ONE registration is allowed per email ID. Duplicate entries will be
-                rejected.</b></li>
-            <li>Ensure all team members' details (name & phone number) are filled correctly.</li>
-            <li>Registration fee is <b>₹100 per head</b> — pay the total amount for your full team.</li>
+          style="margin-top:25px; padding:14px 16px; background:rgba(139,0,0,0.15); border:1px solid rgba(212,175,55,0.4); border-radius:12px; text-align:left;">
+          <p style="color:var(--gold); font-weight:700; font-size:0.95rem; margin-bottom:8px;">⚠️ Instructions</p>
+          <ul style="color:#e0c97f; font-size:0.85rem; line-height:1.7; padding-left:18px; margin:0;">
+            <li>Upload clear payment screenshot with <b>Transaction ID & Amount</b></li>
+            <li style="color:#ff6b6b;"><b>🚫 Fake screenshots or duplicate emails → rejected</b></li>
+            <li>Fee: <b>₹100/head</b> — pay total for your full team</li>
           </ul>
         </div>
 
@@ -1546,14 +1541,18 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section">
+  <!-- QUERIES & CONTACT -->
+  <section class="section" id="queries">
     <div class="glass">
-      <h2 class="title">For Queries</h2>
+      <h2 class="title">Queries & Contact</h2>
       <div class="contact-grid">
         <div class="contact-item">
           <span class="c-icon">📧</span>
           <span><a href="mailto:techtonic2k26@gmail.com">techtonic2k26@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="c-icon">👤</span>
+          <span>Aravindhan S — <a href="tel:6379857987">63798 57987</a></span>
         </div>
         <div class="contact-item">
           <span class="c-icon">👤</span>
@@ -1567,21 +1566,16 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
     </div>
   </section>
 
-  <section class="section" id="regContact">
-    <div class="glass">
-      <h2 class="title">Contact For Registration</h2>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <span class="c-icon">📧</span>
-          <span><a href="mailto:techtonic2k26@gmail.com">techtonic2k26@gmail.com</a></span>
-        </div>
-        <div class="contact-item">
-          <span class="c-icon">👤</span>
-          <span>Aravindhan S — <a href="tel:6379857987">63798 57987</a></span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Floating Contact Button -->
+  <a href="#queries" id="floatingContact" style="
+    position:fixed; bottom:24px; right:24px; z-index:900;
+    width:52px; height:52px; border-radius:50%;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 18px rgba(37,211,102,0.4);
+    text-decoration:none; font-size:22px;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  " onmouseover="this.style.transform='scale(1.12)'" onmouseout="this.style.transform='scale(1)'">📞</a>
 
   <footer>
     © sdparavind | 2026 Department of ECE | <span>TECH TONIC 2K26</span>
@@ -1674,7 +1668,7 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
 
     /* ================= UPI QR CODE ================= */
     new QRCode(document.getElementById("upiQR"), {
-      text: "upi://pay?pa=8248264465@naviaxis&pn=TechTonic2K26&cu=INR",
+      text: "upi://pay?pa=mamallanktr-2@okaxis&pn=TechTonic2K26&cu=INR",
       width: 180,
       height: 180,
       colorDark: "#d4af37",
@@ -1780,7 +1774,6 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      /* Closing check */
       if (new Date().getTime() > deadline) {
         alert("Registrations Closed.");
         return;
@@ -1792,6 +1785,13 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
         return;
       }
 
+      /* Show loading state on submit button */
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.6";
+      submitBtn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">⏳ Submitting...</span>';
+
       const reader = new FileReader();
 
       reader.onload = function () {
@@ -1801,17 +1801,13 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
         fetch(scriptURL, {
           method: "POST",
           body: JSON.stringify({
-
             name: form.name.value,
             email: form.email.value,
             phone: form.phone.value,
             college: form.college.value,
-
             event1: form["Technical Event"].value,
             event2: form["Non-Technical Event"].value,
-
             teamSize: teamSizeInput.value,
-
             member2_name: teamSizeInput.value >= 2 ? form.member2_name.value : "",
             member2_phone: teamSizeInput.value >= 2 ? form.member2_phone.value : "",
             member3_name: teamSizeInput.value >= 3 ? form.member3_name.value : "",
@@ -1821,11 +1817,13 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
             file: base64,
             fileName: file.name,
             fileType: file.type
-
           })
         })
           .then(response => response.text())
           .then(result => {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = "1";
+            submitBtn.textContent = originalText;
 
             if (result === "ALREADY_REGISTERED") {
               alert("⚠ You have already registered with this email.");
@@ -1833,15 +1831,17 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
             }
 
             alert("Registration Successful ✅\n\nPlease check your email for Entry ID and QR code.");
-
             form.reset();
           })
-          .catch(() => alert("Submission Failed ❌"));
-
+          .catch(() => {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = "1";
+            submitBtn.textContent = originalText;
+            alert("Submission Failed ❌");
+          });
       };
 
       reader.readAsDataURL(file);
-
     });
 
     /* ================= ADMIN OVERRIDE ================= */
