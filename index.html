@@ -1378,7 +1378,7 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
         <ul style="text-align:left;max-width:800px;margin:auto;color:#ccc;">
           <li>🎓 Open to all Engineering college students</li>
           <li>🎯 Max 2 events per participant</li>
-          <li>👥 Team size: 2 or 4 members</li>
+          <li>👥 Team size: 2–4 members (Paper Presentation allows up to 4)</li>
           <li>💰 Registration Fee: ₹100 per head</li>
           <li>🍽️ Lunch provided for all registered participants</li>
         </ul>
@@ -1535,7 +1535,8 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
           👥 Select an event to see team size
         </p>
         <p style="color:#999;font-size:0.78rem;margin-bottom:10px;line-height:1.5;">
-          Technical Events → Max 2 Members &nbsp;|&nbsp; Non-Technical Events → Max 4 Members<br>
+          Paper Presentation → 2–4 Members &nbsp;|&nbsp; Other Technical → Max 2 Members &nbsp;|&nbsp; Non-Technical →
+          Max 4 Members<br>
           You can join up to 2 events (1 Technical + 1 Non-Technical)
         </p>
 
@@ -1725,13 +1726,14 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
       const nonTechVal = nonTechSelect.value;
       const hasTech = techVal && techVal !== "None";
       const hasNonTech = nonTechVal && nonTechVal !== "None";
+      const isPaperPresentation = techVal === "Paper Presentation";
 
       let maxMembers = 0;
 
-      if (hasNonTech) {
-        maxMembers = 4; // Non-technical allows up to 4
+      if (hasNonTech || isPaperPresentation) {
+        maxMembers = 4; // Non-technical & Paper Presentation allow up to 4
       } else if (hasTech) {
-        maxMembers = 2; // Technical allows up to 2
+        maxMembers = 2; // Other Technical events allow up to 2
       }
 
       teamSizeInput.value = maxMembers;
