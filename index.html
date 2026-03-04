@@ -689,6 +689,40 @@
       color: var(--gold);
     }
 
+    /* Tap for details hint */
+    .event-card .tap-hint {
+      font-size: 0.68rem;
+      color: rgba(212, 175, 55, 0.5);
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+      transition: all 0.3s ease;
+      animation: tapPulse 2.5s ease-in-out infinite;
+    }
+
+    .event-card:hover .tap-hint {
+      color: var(--gold);
+      transform: scale(1.05);
+    }
+
+    @keyframes tapPulse {
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* Enhanced event card active state for mobile touch */
+    .event-card:active {
+      transform: scale(0.97);
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--gold);
+    }
+
     form input {
       width: 100%;
       padding: 15px 16px;
@@ -1328,42 +1362,42 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
 
       <div class="content">
 
-        <h3>🔹 About the Symposium</h3>
+        <h3>🏛️ About the Symposium</h3>
         <p>
           Tech Tonic 2K26 — One Day National Level Technical Symposium (March 10, 2026) by the Department of ECE.
           Bringing together innovative minds to showcase technical excellence and creative problem solving.
         </p>
 
-        <h3>🔹 Location</h3>
+        <h3>� Location</h3>
         <p>
-          📍 P.T. Lee Chengalvaraya Naicker College of Engineering & Technology,
+          🏫 P.T. Lee Chengalvaraya Naicker College of Engineering & Technology,
           Oovery, Veliyur Post, Kanchipuram – 631502
         </p>
 
-        <h3>🔹 Participation Details</h3>
+        <h3>� Participation Details</h3>
         <ul style="text-align:left;max-width:800px;margin:auto;color:#ccc;">
-          <li>Open to all Engineering college students</li>
-          <li>Max 2 events per participant</li>
-          <li>Team size: 2 or 4 members</li>
-          <li>Registration Fee: ₹100 per head</li>
+          <li>🎓 Open to all Engineering college students</li>
+          <li>🎯 Max 2 events per participant</li>
+          <li>👥 Team size: 2 or 4 members</li>
+          <li>💰 Registration Fee: ₹100 per head</li>
           <li>🍽️ Lunch provided for all registered participants</li>
         </ul>
 
-        <h3>🔹 Winner Criteria</h3>
+        <h3>🏆 Winner Criteria</h3>
         <ul style="text-align:left;max-width:800px;margin:auto;color:#ccc;">
-          <li>Innovation & Technical Depth</li>
-          <li>Presentation Quality</li>
-          <li>Team Coordination</li>
-          <li>Judges' Evaluation</li>
+          <li>💡 Innovation & Technical Depth</li>
+          <li>🎤 Presentation Quality</li>
+          <li>🤝 Team Coordination</li>
+          <li>⚖️ Judges' Evaluation</li>
         </ul>
 
-        <h3>🔹 How to Register?</h3>
+        <h3>� How to Register?</h3>
         <ul style="text-align:left;max-width:800px;margin:auto;color:#ccc;">
-          <li>STEP 1: Fill the Registration Form</li>
-          <li>STEP 2: Make Payment via UPI</li>
-          <li>STEP 3: Upload Payment Proof</li>
-          <li>STEP 4: Receive Confirmation Email</li>
-          <li>STEP 5: Entry Pass will be emailed within 5 mins after verification</li>
+          <li>✅ STEP 1: Fill the Registration Form</li>
+          <li>💳 STEP 2: Make Payment via UPI</li>
+          <li>📤 STEP 3: Upload Payment Proof</li>
+          <li>📧 STEP 4: Receive Confirmation Email</li>
+          <li>🎫 STEP 5: Entry Pass will be emailed within 5 mins after verification</li>
         </ul>
 
         <h3 style="color:#25D366;">📲 WhatsApp Group — MANDATORY</h3>
@@ -1392,61 +1426,61 @@ font-weight:600;text-align:center;max-width:420px;border:1px solid rgba(255,100,
   <!-- EVENTS -->
   <section class="section" id="events">
     <div class="glass">
-      <h2 class="title">Technical Events</h2>
+      <h2 class="title">🔥 Technical Events</h2>
       <div class="event-grid">
         <a href="paper.html" class="event-card">
-          <span class="event-icon">📄</span>
+          <span class="event-icon">📄✨</span>
           <span class="event-name">Paper Presentation</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="circuit.html" class="event-card">
-          <span class="event-icon">🔌</span>
+          <span class="event-icon">🔌⚡</span>
           <span class="event-name">Circuit Debugging</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="quiz.html" class="event-card">
-          <span class="event-icon">⚡</span>
+          <span class="event-icon">🧠💡</span>
           <span class="event-name">Electro Quiz</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="poster.html" class="event-card">
-          <span class="event-icon">🎨</span>
+          <span class="event-icon">🎨🖌️</span>
           <span class="event-name">Poster Design</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="smu.html" class="event-card">
-          <span class="event-icon">💻</span>
+          <span class="event-icon">💻🔥</span>
           <span class="event-name">SMU Circuit Showdown</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
       </div>
 
-      <h2 class="title" style="margin-top:40px;">Non-Technical Events</h2>
+      <h2 class="title" style="margin-top:40px;">🎉 Non-Technical Events</h2>
       <div class="event-grid">
         <a href="actitout.html" class="event-card">
-          <span class="event-icon">🎭</span>
+          <span class="event-icon">🎭🌟</span>
           <span class="event-name">Act It Out</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="bioscope.html" class="event-card">
-          <span class="event-icon">🎬</span>
+          <span class="event-icon">🎬🍿</span>
           <span class="event-name">Bioscope</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="pictionary.html" class="event-card">
-          <span class="event-icon">🖼️</span>
+          <span class="event-icon">🖼️🎯</span>
           <span class="event-name">Tamil Pictionary</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="wordchain.html" class="event-card">
-          <span class="event-icon">🔗</span>
+          <span class="event-icon">🔗💬</span>
           <span class="event-name">Word Chain</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
         <a href="rhyme.html" class="event-card">
-          <span class="event-icon">🎵</span>
+          <span class="event-icon">🎵🎤</span>
           <span class="event-name">Find the Rhyme</span>
-          <span class="event-arrow">→</span>
+          <span class="tap-hint">👆 Tap for details</span>
         </a>
       </div>
     </div>
